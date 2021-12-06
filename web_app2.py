@@ -17,7 +17,7 @@ from keras.applications.vgg16 import decode_predictions
 from keras.applications.vgg16 import VGG16
 from keras.preprocessing import image
 
-import cv2
+
 from PIL import Image, ImageOps
 
 import numpy as np
@@ -47,7 +47,7 @@ def import_and_predict(image1):
 
 
 
-    new_image_gauss = cv2.GaussianBlur(image, (figure_size, figure_size),0)
+   
     # reshape data for the model
     image = image.reshape((1, image.shape[0], image.shape[1], image.shape[2]))
     
